@@ -1,0 +1,205 @@
+/* =================================
+   RESUME SECTION
+================================= */
+
+.resume-section {
+  padding: 110px 30px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(124, 58, 237, 0.10),
+      transparent 45%
+    ),
+    #080808;
+}
+
+
+.resume-container {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 70px 40px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.02);
+}
+
+
+/* Section label */
+
+.section-label {
+  margin-bottom: 15px;
+
+  color: #8b5cf6;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+
+/* Heading */
+
+.resume-title {
+  margin-bottom: 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 5vw, 50px);
+
+  line-height: 1.15;
+}
+
+.resume-title span {
+  color: #8b5cf6;
+}
+
+
+/* Description */
+
+.resume-description {
+  max-width: 650px;
+
+  margin: 0 auto 35px;
+
+  color: #a1a1aa;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.resume-buttons {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.resume-btn {
+  min-width: 170px;
+
+  padding: 14px 25px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Primary */
+
+.resume-btn-primary {
+  color: #ffffff;
+
+  background: #7c3aed;
+
+  border: 1px solid #7c3aed;
+}
+
+.resume-btn-primary:hover {
+  background: #8b5cf6;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(124, 58, 237, 0.25);
+}
+
+
+/* Secondary */
+
+.resume-btn-secondary {
+  color: #ffffff;
+
+  background: transparent;
+
+  border: 1px solid #3f3f46;
+}
+
+.resume-btn-secondary:hover {
+  color: #a78bfa;
+
+  border-color: #8b5cf6;
+
+  transform: translateY(-3px);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+  .resume-section {
+    padding: 80px 20px;
+  }
+
+  .resume-container {
+    padding: 50px 25px;
+  }
+
+  .resume-title {
+    font-size: 34px;
+  }
+
+  .resume-description {
+    font-size: 15px;
+  }
+
+  .resume-buttons {
+    flex-direction: column;
+  }
+
+  .resume-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+  .resume-section {
+    padding: 70px 16px;
+  }
+
+  .resume-container {
+    padding: 40px 20px;
+  }
+
+  .resume-title {
+    font-size: 30px;
+  }
+
+  .resume-description {
+    font-size: 14px;
+  }
+}

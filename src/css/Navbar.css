@@ -1,0 +1,295 @@
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 75px;
+
+  background: rgba(8, 8, 8, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 1000;
+}
+
+
+/* ================================
+   NAVBAR CONTAINER
+================================ */
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 23px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.logo span {
+  color: #8b5cf6;
+}
+
+.logo:hover {
+  color: #8b5cf6;
+}
+
+
+/* ================================
+   NAVIGATION LINKS
+================================ */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: #cfcfcf;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 5px 0;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Underline animation */
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #8b5cf6;
+
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* ================================
+   MOBILE MENU BUTTON
+================================ */
+
+.menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.menu-button span {
+  width: 25px;
+  height: 2px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1050px) {
+
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .nav-links {
+    gap: 19px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+
+  /* Hide desktop navigation */
+
+  .nav-links {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: rgba(8, 8, 8, 0.97);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0;
+
+    transform: translateY(-20px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+  }
+
+
+  /* Open mobile menu */
+
+  .nav-links.active {
+    transform: translateY(0);
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .nav-links a {
+    width: 100%;
+
+    padding: 14px 0;
+
+    text-align: center;
+
+    font-size: 16px;
+  }
+
+
+  .nav-links a::after {
+    display: none;
+  }
+
+
+  /* Show hamburger */
+
+  .menu-button {
+    display: flex;
+  }
+
+
+  /* Hamburger → X animation */
+
+  .menu-button.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-button.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .menu-button {
+    width: 38px;
+    height: 38px;
+  }
+}

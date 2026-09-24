@@ -1,0 +1,304 @@
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+  padding: 110px 30px;
+
+  background: #080808;
+}
+
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =================================
+   SECTION HEADING
+================================= */
+
+.section-heading {
+  max-width: 800px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+
+.section-label {
+  margin-bottom: 15px;
+
+  color: #8b5cf6;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+  margin-bottom: 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 5vw, 50px);
+
+  line-height: 1.15;
+}
+
+
+.section-heading h2 span {
+  color: #8b5cf6;
+}
+
+
+.section-intro {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #a1a1aa;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =================================
+   ABOUT CARDS
+================================= */
+
+.about-content {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+.about-card {
+  position: relative;
+
+  padding: 35px 30px;
+
+  min-height: 260px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  transition: all 0.3s ease;
+}
+
+
+.about-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(139, 92, 246, 0.5);
+
+  background: rgba(139, 92, 246, 0.04);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Number */
+
+.about-card-number {
+  margin-bottom: 25px;
+
+  color: #8b5cf6;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* Card heading */
+
+.about-card h3 {
+  margin-bottom: 15px;
+
+  color: #ffffff;
+
+  font-size: 23px;
+}
+
+
+/* Card text */
+
+.about-card p {
+  color: #a1a1aa;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =================================
+   TECHNOLOGY STRIP
+================================= */
+
+.about-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.about-tech span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  border: 1px solid #27272a;
+  border-radius: 20px;
+
+  background: #111111;
+  color: #d4d4d8;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.about-tech span svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.about-tech span:hover {
+  border-color: #8b5cf6;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+  .about-section {
+    padding: 80px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-label {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-intro {
+    font-size: 15px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .about-card {
+    min-height: auto;
+
+    padding: 28px 24px;
+  }
+
+  .about-card:last-child {
+    grid-column: auto;
+
+    max-width: none;
+  }
+
+  .about-card h3 {
+    font-size: 21px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+
+  .about-tech {
+    margin-top: 35px;
+
+    gap: 8px;
+  }
+
+  .about-tech span {
+    font-size: 12px;
+
+    padding: 8px 13px;
+  }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+
+  .about-section {
+    padding: 70px 16px;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+
+  .about-card {
+    padding: 25px 20px;
+  }
+}
