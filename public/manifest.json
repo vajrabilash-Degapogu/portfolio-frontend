@@ -3,18 +3,18 @@
   "name": "Vajrabilash Degapogu | Portfolio",
   "icons": [
     {
-      "src": "vd-logo.svg?v=5",
+      "src": "vd-logo.svg?v=6",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "logo192.png?v=5",
+      "src": "logo192.png?v=6",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png?v=5",
+      "src": "logo512.png?v=6",
       "type": "image/png",
       "sizes": "512x512"
     }
