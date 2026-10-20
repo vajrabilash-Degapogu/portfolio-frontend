@@ -1,4 +1,4 @@
-import resumeFile from "../assets/resume/Vajrabilash_Degapogu.pdf";
+import resumeFile from "../assets/resume/DV_abhilash_FR.pdf";
 import "../css/Resume.css";
 
 function Resume() {
@@ -32,7 +32,7 @@ function Resume() {
           {/* Download Resume */}
           <a
             href={resumeFile}
-            download="Vajrabilash_Degapogu.pdf"
+            download="Vajrabilash_Resume.pdf"
             className="resume-btn resume-btn-secondary"
           >
             Download Resume
