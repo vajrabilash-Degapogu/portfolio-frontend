@@ -1,4 +1,4 @@
-import resumeFile from "../assets/resume/DV_abhilash_FR.pdf";
+import resumeFile from "../assets/resume/Vajrabilash_Degapogu.pdf";
 import "../css/Resume.css";
 
 function Resume() {
