@@ -1,22 +1,12 @@
 {
   "short_name": "Vajrabilash",
-  "name": "Vajrabilash Degapogu | Portfolio",
+  "name": "Vajrabilash Degapogu | Python Developer",
   "icons": [
     {
-      "src": "vd-logo.svg?v=7",
+      "src": "vd-logo.svg?v=9",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
-    },
-    {
-      "src": "vd-logo.svg?v=7",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "vd-logo.svg?v=7",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
