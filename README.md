@@ -1,33 +1,12 @@
 # Vajrabilash Degapogu — Portfolio
 
-Personal portfolio website showcasing my skills, projects, experience, education, and certifications.
+React portfolio with a separate Express API for owner-only content management. The public portfolio reads projects, resume, profile image, favicon and title from the API, with existing local assets as fallbacks.
 
-## Built with
-- React
-- JavaScript
-- CSS
-- Create React App (`react-scripts`)
+## Backend setup
+See [backend/README.md](backend/README.md).
+1. Deploy `backend` as a Node.js service with persistent storage.
+2. Set backend environment variables based on `backend/.env.example`: `ADMIN_EMAIL`, strong `JWT_SECRET`, SMTP credentials, exact `FRONTEND_ORIGIN`, and persistent `DATABASE_PATH`/`UPLOAD_DIR`.
+3. Set frontend hosting variable `REACT_APP_API_URL` to the backend origin (e.g. `https://api.yourdomain.com`) and rebuild/redeploy.
+4. Visit `/admin` and sign in using email OTP.
 
-## Run locally
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm start
-   ```
-3. Create a production build:
-   ```bash
-   npm run build
-   ```
-
-## Branding and favicon
-
-The page title, metadata, and social preview are configured in `public/index.html`.
-The custom VD favicon is `public/vd-logo.svg`, referenced by the page as an SVG favicon. The web app name and icon are configured in `public/manifest.json`.
-
-## Deployment
-
-The production website is hosted at [vajrabilash.in](https://vajrabilash.in). Deploy the latest `main` branch through the connected hosting project.
+Features: OTP login; project CRUD; resume/profile/favicon uploads; site title/description settings; edit history. Never commit secrets, database files, or uploads. Use HTTPS and persistent storage. Serverless hosts need managed database/object storage. Browser title/favicon update at runtime; social preview metadata may require redeployment.
