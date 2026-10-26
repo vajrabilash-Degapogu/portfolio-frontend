@@ -1,4 +1,4 @@
-const API_BASE = (process.env.REACT_APP_API_URL || '').replace(/\\/$/, '');
+const API_BASE = (process.env.REACT_APP_API_URL || '').replace(/\/$/, '');
 
 export async function apiRequest(path, options = {}) {
   const headers = { ...(options.headers || {}) };
@@ -16,8 +16,9 @@ export async function apiRequest(path, options = {}) {
   }
   return data;
 }
+
 export function assetUrl(url) {
   if (!url) return '';
-  if (/^https?:\\/\\//i.test(url)) return url;
+  if (/^https?:\/\//i.test(url)) return url;
   return `${API_BASE}${url.startsWith('/') ? '' : '/'}${url}`;
 }
