@@ -63,6 +63,7 @@ function audit(action, detail) {
 const DEFAULT_PROJECTS = [
  {id:'owntag',title:'owntag.in',type:'FULL STACK WEB APPLICATION',description:'A real-world web application developed as part of my full-stack development journey.',technologies:['React.js','Spring Boot','PostgreSQL'],projectUrl:'https://www.owntag.in',githubUrl:''},
  {id:'portfolio',title:'Portfolio Website',type:'PERSONAL PROJECT',description:'A responsive developer portfolio built to showcase my skills, projects, education and development journey.',technologies:['Python','Django','PostgreSQL'],projectUrl:'https://vajrabilash.in',githubUrl:'https://github.com/vajrabilash-Degapogu/portfolio-frontend'},
+ {id:'portfoliocv',title:'PortfolioCV.in',type:'FULL-STACK CAREER PLATFORM',description:'A full-stack platform that helps students create professional resumes and personal portfolio websites, explore job opportunities, and track applications.',technologies:['React.js','Django','Python','PostgreSQL','REST APIs','Resend Email OTP'],projectUrl:'https://www.portfoliocv.in',githubUrl:'https://github.com/portfoliocvin'},
  {id:'crud',title:'Python CRUD Application',type:'PYTHON PROJECT',description:'A practical CRUD application built while developing Python programming and backend development fundamentals.',technologies:['Python','Django','PostgreSQL'],projectUrl:'',githubUrl:''}
 ];
 if (!settingGet.get('profileImage')) setSetting('profileImage', '');
