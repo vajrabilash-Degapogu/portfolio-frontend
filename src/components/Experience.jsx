@@ -15,6 +15,20 @@ import {
   FaCloudUploadAlt,
 } from "react-icons/fa";
 
+const experienceIconColors = {
+  Python: "#3776AB",
+  Django: "#44B78B",
+  "React.js": "#61DAFB",
+  PostgreSQL: "#4169E1",
+  "REST API": "#F97316",
+  "Spring Boot": "#6DB33F",
+  CRUD: "#7F8C8D",
+  APIs: "#F97316",
+  Database: "#4479A1",
+  Git: "#F05032",
+  Deployment: "#8B5CF6",
+};
+
 function Experience() {
   return (
     <section className="experience-section" id="experience">
@@ -88,27 +102,27 @@ function Experience() {
               <div className="experience-tech">
 
                 <span>
-                  <SiPython />
+                  <SiPython  style={{ color: experienceIconColors["Python"] || "#8b5cf6" }} />
                   Python
                 </span>
 
                 <span>
-                  <SiDjango />
+                  <SiDjango  style={{ color: experienceIconColors["Django"] || "#8b5cf6" }} />
                   Django
                 </span>
 
                 <span>
-                  <SiReact />
+                  <SiReact  style={{ color: experienceIconColors["React.js"] || "#8b5cf6" }} />
                   React.js
                 </span>
 
                 <span>
-                  <SiPostgresql />
+                  <SiPostgresql  style={{ color: experienceIconColors["PostgreSQL"] || "#8b5cf6" }} />
                   PostgreSQL
                 </span>
 
                 <span>
-                  <FaCode />
+                  <FaCode  style={{ color: experienceIconColors["REST API"] || "#8b5cf6" }} />
                   REST API
                 </span>
 
@@ -160,22 +174,22 @@ function Experience() {
               <div className="experience-tech">
 
                 <span>
-                  <SiReact />
+                  <SiReact  style={{ color: experienceIconColors["React.js"] || "#8b5cf6" }} />
                   React.js
                 </span>
 
                 <span>
-                  <SiSpringboot />
+                  <SiSpringboot  style={{ color: experienceIconColors["Spring Boot"] || "#8b5cf6" }} />
                   Spring Boot
                 </span>
 
                 <span>
-                  <SiPostgresql />
+                  <SiPostgresql  style={{ color: experienceIconColors["PostgreSQL"] || "#8b5cf6" }} />
                   PostgreSQL
                 </span>
 
                 <span>
-                  <FaCode />
+                  <FaCode  style={{ color: experienceIconColors["REST API"] || "#8b5cf6" }} />
                   REST API
                 </span>
 
@@ -227,27 +241,27 @@ function Experience() {
               <div className="experience-tech">
 
                 <span>
-                  <FaDatabase />
+                  <FaDatabase  style={{ color: experienceIconColors["CRUD"] || "#8b5cf6" }} />
                   CRUD
                 </span>
 
                 <span>
-                  <FaCode />
+                  <FaCode  style={{ color: experienceIconColors["APIs"] || "#8b5cf6" }} />
                   APIs
                 </span>
 
                 <span>
-                  <FaDatabase />
+                  <FaDatabase  style={{ color: experienceIconColors["Database"] || "#8b5cf6" }} />
                   Database
                 </span>
 
                 <span>
-                  <SiGit />
+                  <SiGit  style={{ color: experienceIconColors["Git"] || "#8b5cf6" }} />
                   Git
                 </span>
 
                 <span>
-                  <FaCloudUploadAlt />
+                  <FaCloudUploadAlt  style={{ color: experienceIconColors["Deployment"] || "#8b5cf6" }} />
                   Deployment
                 </span>
 
