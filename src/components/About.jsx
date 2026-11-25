@@ -30,6 +30,31 @@ import {
   FaCode,
 } from "react-icons/fa";
 
+const technologyColors = {
+  Python: "#3776AB",
+  Django: "#44B78B",
+  "React.js": "#61DAFB",
+  Java: "#ED8B00",
+  "Spring Boot": "#6DB33F",
+  JavaScript: "#F7DF1E",
+  "Power BI": "#F2C811",
+  PostgreSQL: "#4169E1",
+  MySQL: "#4479A1",
+  "REST APIs": "#F97316",
+  Excel: "#217346",
+  SQL: "#4479A1",
+  Pandas: "#150458",
+  "NumPy": "#4DABCF",
+  Matplotlib: "#11557C",
+  Seaborn: "#4C72B0",
+  Jupyter: "#F37626",
+  "Scikit-learn": "#F7931E",
+  TensorFlow: "#FF6F00",
+  PyTorch: "#EE4C2C",
+  "Machine Learning": "#8B5CF6",
+  NLP: "#A855F7",
+};
+
 function About() {
   return (
     <section className="about-section" id="about">
@@ -120,114 +145,136 @@ function About() {
         {/* Technology Strip */}
         <div className="about-tech">
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Python"] }}>
+    <<span>
     <SiPython />
     Python
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Django"] }}>
+    <<span>
     <SiDjango />
     Django
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["React.js"] }}>
+    <<span>
     <SiReact />
     React.js
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Java"] }}>
+    <<span>
     <FaJava />
     Java
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Spring Boot"] }}>
+    <<span>
     <SiSpringboot />
     Spring Boot
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Java"] }}>
+    <<span>
     <SiJavascript />
     JavaScript
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Power BI"] }}>
+    <<span>
   <FaChartBar />
   Power BI
 </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["PostgreSQL"] }}>
+    <<span>
     <SiPostgresql />
     PostgreSQL
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["MySQL"] }}>
+    <<span>
     <SiMysql />
     MySQL
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["REST APIs"] }}>
+    <<span>
     <FaCode />
     REST APIs
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Excel"] }}>
+    <<span>
     <FaFileExcel />
     Excel
   </span>
 
  
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["SQL"] }}>
+    <<span>
     <FaDatabase />
     SQL
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Pandas"] }}>
+    <<span>
     <SiPandas />
     Pandas
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["NumPy"] }}>
+    <<span>
     <SiNumpy />
     NumPy
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Matplotlib"] }}>
+    <<span>
     <FaChartLine />
     Matplotlib
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Seaborn"] }}>
+    <<span>
     <FaChartLine />
     Seaborn
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Jupyter"] }}>
+    <<span>
     <SiJupyter />
     Jupyter
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Scikit-learn"] }}>
+    <<span>
     <SiScikitlearn />
     Scikit-learn
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["TensorFlow"] }}>
+    <<span>
     <SiTensorflow />
     TensorFlow
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["PyTorch"] }}>
+    <<span>
     <SiPytorch />
     PyTorch
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["Machine Learning"] }}>
+    <<span>
     <FaBrain />
     Machine Learning
   </span>
 
-  <span>
+  <span style={{ "--tech-color": technologyColors["NLP"] }}>
+    <<span>
     <FaBrain />
     NLP
   </span>
