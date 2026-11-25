@@ -30,31 +30,6 @@ import {
   FaCode,
 } from "react-icons/fa";
 
-const technologyColors = {
-  Python: "#3776AB",
-  Django: "#44B78B",
-  "React.js": "#61DAFB",
-  Java: "#ED8B00",
-  "Spring Boot": "#6DB33F",
-  JavaScript: "#F7DF1E",
-  "Power BI": "#F2C811",
-  PostgreSQL: "#4169E1",
-  MySQL: "#4479A1",
-  "REST APIs": "#F97316",
-  Excel: "#217346",
-  SQL: "#4479A1",
-  Pandas: "#150458",
-  "NumPy": "#4DABCF",
-  Matplotlib: "#11557C",
-  Seaborn: "#4C72B0",
-  Jupyter: "#F37626",
-  "Scikit-learn": "#F7931E",
-  TensorFlow: "#FF6F00",
-  PyTorch: "#EE4C2C",
-  "Machine Learning": "#8B5CF6",
-  NLP: "#A855F7",
-};
-
 function About() {
   return (
     <section className="about-section" id="about">
