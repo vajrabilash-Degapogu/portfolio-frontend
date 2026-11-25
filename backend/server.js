@@ -78,6 +78,23 @@ if (db.prepare('SELECT count(*) AS count FROM projects').get().count === 0) {
  tx();
 }
 
+
+ // Add PortfolioCV.in to existing installations without resetting or overwriting
+ // projects that were already managed through the admin dashboard.
+ const portfolioCvProject = DEFAULT_PROJECTS.find((project) => project.id === 'portfoliocv');
+ if (portfolioCvProject && !db.prepare('SELECT id FROM projects WHERE id = ?').get('portfoliocv')) {
+  const nextSortOrder = db.prepare('SELECT COALESCE(MAX(sortOrder), -1) + 1 AS value FROM projects').get().value;
+  db.prepare(`INSERT INTO projects(id,title,type,description,technologies,projectUrl,githubUrl,sortOrder,createdAt,updatedAt)
+   VALUES(@id,@title,@type,@description,@technologies,@projectUrl,@githubUrl,@sortOrder,@createdAt,@updatedAt)`)
+   .run({
+    ...portfolioCvProject,
+    technologies: JSON.stringify(portfolioCvProject.technologies),
+    sortOrder: nextSortOrder,
+    createdAt: now(),
+    updatedAt: now()
+   });
+ }
+
 app.set('trust proxy', IS_PROD ? 1 : false);
 app.use(helmet({crossOriginResourcePolicy:{policy:'cross-origin'}}));
 app.use(cors({origin: FRONTEND_ORIGIN.split(',').map(s=>s.trim()), credentials:true}));
