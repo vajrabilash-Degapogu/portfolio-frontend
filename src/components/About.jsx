@@ -144,141 +144,115 @@ function About() {
 
         {/* Technology Strip */}
         <div className="about-tech">
-
-  <span style={{ "--tech-color": technologyColors["Python"] }}>
-    <<span>
-    <SiPython />
+  <span>
+    <SiPython style={{ color: "#3776AB" }} />
     Python
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Django"] }}>
-    <<span>
-    <SiDjango />
+  <span>
+    <SiDjango style={{ color: "#44B78B" }} />
     Django
   </span>
 
-  <span style={{ "--tech-color": technologyColors["React.js"] }}>
-    <<span>
-    <SiReact />
+  <span>
+    <SiReact style={{ color: "#61DAFB" }} />
     React.js
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Java"] }}>
-    <<span>
-    <FaJava />
+  <span>
+    <FaJava style={{ color: "#ED8B00" }} />
     Java
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Spring Boot"] }}>
-    <<span>
-    <SiSpringboot />
+  <span>
+    <SiSpringboot style={{ color: "#6DB33F" }} />
     Spring Boot
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Java"] }}>
-    <<span>
-    <SiJavascript />
+  <span>
+    <SiJavascript style={{ color: "#F7DF1E" }} />
     JavaScript
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Power BI"] }}>
-    <<span>
-  <FaChartBar />
-  Power BI
-</span>
+  <span>
+    <FaChartBar style={{ color: "#F2C811" }} />
+    Power BI
+  </span>
 
-  <span style={{ "--tech-color": technologyColors["PostgreSQL"] }}>
-    <<span>
-    <SiPostgresql />
+  <span>
+    <SiPostgresql style={{ color: "#4169E1" }} />
     PostgreSQL
   </span>
 
-  <span style={{ "--tech-color": technologyColors["MySQL"] }}>
-    <<span>
-    <SiMysql />
+  <span>
+    <SiMysql style={{ color: "#4479A1" }} />
     MySQL
   </span>
 
-  <span style={{ "--tech-color": technologyColors["REST APIs"] }}>
-    <<span>
-    <FaCode />
+  <span>
+    <FaCode style={{ color: "#F97316" }} />
     REST APIs
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Excel"] }}>
-    <<span>
-    <FaFileExcel />
+  <span>
+    <FaFileExcel style={{ color: "#217346" }} />
     Excel
   </span>
 
- 
-
-  <span style={{ "--tech-color": technologyColors["SQL"] }}>
-    <<span>
-    <FaDatabase />
+  <span>
+    <FaDatabase style={{ color: "#4479A1" }} />
     SQL
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Pandas"] }}>
-    <<span>
-    <SiPandas />
+  <span>
+    <SiPandas style={{ color: "#150458" }} />
     Pandas
   </span>
 
-  <span style={{ "--tech-color": technologyColors["NumPy"] }}>
-    <<span>
-    <SiNumpy />
+  <span>
+    <SiNumpy style={{ color: "#4DABCF" }} />
     NumPy
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Matplotlib"] }}>
-    <<span>
-    <FaChartLine />
+  <span>
+    <FaChartLine style={{ color: "#11557C" }} />
     Matplotlib
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Seaborn"] }}>
-    <<span>
-    <FaChartLine />
+  <span>
+    <FaChartLine style={{ color: "#4C72B0" }} />
     Seaborn
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Jupyter"] }}>
-    <<span>
-    <SiJupyter />
+  <span>
+    <SiJupyter style={{ color: "#F37626" }} />
     Jupyter
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Scikit-learn"] }}>
-    <<span>
-    <SiScikitlearn />
+  <span>
+    <SiScikitlearn style={{ color: "#F7931E" }} />
     Scikit-learn
   </span>
 
-  <span style={{ "--tech-color": technologyColors["TensorFlow"] }}>
-    <<span>
-    <SiTensorflow />
+  <span>
+    <SiTensorflow style={{ color: "#FF6F00" }} />
     TensorFlow
   </span>
 
-  <span style={{ "--tech-color": technologyColors["PyTorch"] }}>
-    <<span>
-    <SiPytorch />
+  <span>
+    <SiPytorch style={{ color: "#EE4C2C" }} />
     PyTorch
   </span>
 
-  <span style={{ "--tech-color": technologyColors["Machine Learning"] }}>
-    <<span>
-    <FaBrain />
+  <span>
+    <FaBrain style={{ color: "#8B5CF6" }} />
     Machine Learning
   </span>
 
-  <span style={{ "--tech-color": technologyColors["NLP"] }}>
-    <<span>
-    <FaBrain />
+  <span>
+    <FaBrain style={{ color: "#A855F7" }} />
     NLP
   </span>
-
 </div>
 
       </div>
