@@ -17,10 +17,10 @@ import {
   SiTensorflow,
   SiPytorch,
   SiHtml5,
-  SiCss3,
 } from "react-icons/si";
 import {
   FaJava,
+  FaCss3Alt,
   FaDatabase,
   FaEnvelope,
   FaFileExcel,
@@ -50,7 +50,7 @@ const icons = {
   tensorflow: SiTensorflow,
   pytorch: SiPytorch,
   html5: SiHtml5,
-  css3: SiCss3,
+  css3: FaCss3Alt,
   sql: FaDatabase,
   excel: FaFileExcel,
   "power bi": FaChartBar,
